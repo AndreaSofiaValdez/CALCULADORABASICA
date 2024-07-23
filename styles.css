@@ -1,25 +1,84 @@
-*{
+html{
     box-sizing: border-box;
+    height: 100%;
+}
+
+*,
+*::before,
+*::after{
     margin: 0;
     padding: 0;
+    box-sizing: inherit;
 }
 
-header{
-
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(300deg, #c9ada7,#a06ec4,#231942);
+    font-family: 'Segoe UI', sans-serif;
+    font-display: swap;
+    height: inherit;
+    justify-content: center;
 }
+
 
 .titulo{
-
+    padding: 15px;
+    color:azure;
 }
 
 #calculadora{
-
+    
+    border: 3px solid;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px 1px;
+    background: #242423;
+    border: 3px solid #333533;
+    width: 415px;
+    height: 450px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 #display{
-
+    background: #e8eddf;
+    border: 1px solid var(--color-primario);
+    box-shadow: 0 2px 30px;
+    border-radius: 5px;
+    color: var( --color-texto);
+    font-size: 35px;
+    overflow: auto;
+    padding: 20px;
+    margin-bottom: 10px;
+    text-align: right;
+    width: 350px;
 }
 
 .boton{
-    
+   justify-content: space-between; 
+   width: 73px;
+   height: 35px;
+   font-size: 25px;
+   margin: 11px 5px;
+   border: none;
+   border-radius: 10px;
+   float: left;
+   background-color: #bfc0c0;
+   color: var(--color-texto);
+   -webkit-box-shadow: -1px 1px 30px -5px rgba(0,0,0,0.2);
+   -moz-box-shadow: -1px 1px 30px -5px rgba(0,0,0,0.2);
+   box-shadow: -1px 1px 30px -5px rgba(0,0,0,0.2);
+}
+
+.boton:hover{
+    cursor: pointer;
+}
+
+.boton:active{
+    transform: scale(1.04);
+    box-shadow: 0 24px 4px 1px 
+    0 1.5px #bfc0c0;
 }
